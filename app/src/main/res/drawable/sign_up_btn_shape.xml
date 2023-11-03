@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid  android:color="@color/cardview_dark_background">    </solid>
+    <corners android:radius="25dp"> </corners>
+    <gradient android:startColor="#7559B8"
+        android:centerColor="#856A3D"
+        android:endColor="#318585">    </gradient>
+    <stroke android:color="#111112"
+        android:width="1dp">
+    </stroke>
+
+</shape>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Whats_App" parent="Theme.Design.NoActionBar">
+
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Whats_App" parent="Base.Theme.Whats_App" />
+</resources>

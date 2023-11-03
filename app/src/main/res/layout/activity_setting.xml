@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whatsAppColor"
+    tools:context=".Setting">
+
+    <ImageView
+        android:id="@+id/bacl_arrow_setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_button">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bacl_arrow_setting"
+        android:orientation="vertical"
+        android:id="@+id/profile_image_linear">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/account_avatar_profile_user_3_svgrepo_com"
+            android:layout_gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/plus"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/profile_image_linear"
+        android:layout_margin="10dp"
+        android:id="@+id/username_layout">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="User Name :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="5dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edt_username_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:textColor="@color/white"
+            android:textColorHint="#ACA9A9">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_below="@id/username_layout"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="About :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="5dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edt_about_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="About You"
+            android:textColor="@color/white"
+            android:textColorHint="#ACA9A9">
+
+        </EditText>
+
+    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whatsAppColor"
+            android:text="Save"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/save_button_shape">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_bg">
+
+        <TextView
+            android:id="@+id/txt_privacy_policy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/privacy"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Privacy Policy"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_about_me"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/about_us"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="About Me"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_invite_friend"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/invite_friend"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Invite a Friend"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_notification"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/notification"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Notification"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_help"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/help"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Help"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
